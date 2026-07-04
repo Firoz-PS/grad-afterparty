@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Fathi & Shaza — Graduation Afterparty 🎓</title>
+<meta name="description" content="Join Fathi & Shaza to celebrate their graduation from University of Georgia! Buffet dinner afterparty on July 18th." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <div id="confetti-canvas-wrap"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <p class="eyebrow reveal">You're Invited To Celebrate</p>
+    <h1 class="hero-title">
+      <span class="reveal name-line" data-name>Fathi</span>
+      <span class="amp reveal">&amp;</span>
+      <span class="reveal name-line" data-name>Shaza</span>
+    </h1>
+    <p class="subtitle reveal">are officially <strong>Graduates</strong> of the</p>
+    <p class="uga reveal">University&nbsp;of&nbsp;Georgia</p>
+
+    <div class="cap-wrap reveal" aria-hidden="true">
+      <div class="cap">🎓</div>
+    </div>
+
+    <p class="tagline reveal">Come toss your worries, not just our caps — join us for a buffet dinner afterparty!</p>
+
+    <a href="#rsvp" class="cta reveal">
+      <span>RSVP Now</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M19 12l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <div class="scroll-cue reveal">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section">
+    <h2 class="section-title reveal">Counting Down To The Big Night</h2>
+    <div class="countdown" id="countdown">
+      <div class="cd-box"><span id="cd-days">00</span><small>Days</small></div>
+      <div class="cd-box"><span id="cd-hours">00</span><small>Hours</small></div>
+      <div class="cd-box"><span id="cd-mins">00</span><small>Mins</small></div>
+      <div class="cd-box"><span id="cd-secs">00</span><small>Secs</small></div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details" id="details">
+    <h2 class="section-title reveal">The Details</h2>
+    <div class="detail-cards">
+      <div class="d-card reveal">
+        <div class="d-icon">📅</div>
+        <h3>Date</h3>
+        <p>Saturday, July 18</p>
+      </div>
+      <div class="d-card reveal">
+        <div class="d-icon">🕗</div>
+        <h3>Time</h3>
+        <p>8:00 PM onwards</p>
+      </div>
+      <div class="d-card reveal">
+        <div class="d-icon">📍</div>
+        <h3>Venue</h3>
+        <p>ABC Restaurant<br /><span class="muted">123 Placeholder Ave, Athens, GA</span></p>
+      </div>
+      <div class="d-card reveal">
+        <div class="d-icon">🍽️</div>
+        <h3>What's Cooking</h3>
+        <p>Buffet Dinner + Good Vibes</p>
+      </div>
+    </div>
+    <p class="note reveal">* Venue &amp; time are tentative and will be finalized soon — check back for updates!</p>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp" id="rsvp">
+    <div class="rsvp-glow"></div>
+    <h2 class="section-title reveal">Will You Be There?</h2>
+    <p class="rsvp-sub reveal">Drop your name below and let us know you're in 🎉</p>
+
+    <form id="rsvp-form" class="rsvp-form reveal" autocomplete="off">
+      <input
+        type="text"
+        id="guest-name"
+        name="name"
+        placeholder="Your full name"
+        required
+        minlength="2"
+      />
+      <button type="submit" id="rsvp-btn">
+        <span class="btn-text">I'll Be There!</span>
+        <span class="btn-spinner" hidden></span>
+      </button>
+    </form>
+    <p id="rsvp-message" class="rsvp-message" role="status" aria-live="polite"></p>
+  </section>
+
+  <footer class="footer">
+    <p>Made with 🎓 &amp; 💛 by Fathi &amp; Shaza</p>
+    <p class="footer-sub">See you on July 18th!</p>
+  </footer>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
