@@ -6,6 +6,7 @@ RSVP form that can write straight into a Google Sheet.
 
 ## Files
 
+
 - `index.html` — page markup
 - `style.css` — mobile-first styling & animations
 - `script.js` — Three.js background, countdown, scroll reveals, RSVP logic
